@@ -1,11 +1,277 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>hello</title>
+    <meta charset="utf-8">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Particles4Dev Team</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="/stylesheet/main.css">
 </head>
-<body>
-	<div id="gameDiv"></div>
-	<script src="phaser.js"></script>
-	<script src="app.js"></script>
+
+<body class="home page">
+
+    <!-- Navigation -->
+    <!-- Note: navbar-default and navbar-inverse are both supported with this theme. -->
+    <nav class="navbar navbar-inverse navbar-fixed-top navbar-expanded">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <img src="assets/img/legal/logo.png" class="img-responsive" alt="">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">Team</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#jurisdictions">Jurisdictions</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#locations">Locations</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <header style="background-image: url('http://themes.startbootstrap.com/vitality-v1.3.4/assets/img/legal/bg-header.jpg')">
+        <div class="intro-content">
+            <img src="assets/img/legal/profile.png" class="img-responsive img-centered" alt="">
+            <div class="brand-name">James &amp; Pratt</div>
+            <hr class="colored">
+            <div class="brand-name-subtext">Attorneys at Law</div>
+        </div>
+        <div class="scroll-down">
+            <a class="btn page-scroll" href="#about"><i class="fa fa-angle-down fa-fw"></i></a>
+        </div>
+    </header>
+<!--
+<header id="navbar-top" class="banner navbar navbar-default" role="banner" style="display: none;">
+    <div class="pannello-affix" data-spy="affix" data-offset-top="79">
+        <div class="container">
+            <div class="navbar-inner">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+
+                <a class="brand" href="http://riotdesign.eu/en/">
+        Riot Design      </a>
+                <a class="brand-piccolo" href="http://riotdesign.eu/en/">
+        Riot Design      </a>
+
+                <nav class="collapse navbar-collapse" role="navigation">
+                    <ul id="menu-primary-navigation-en" class="nav navbar-nav">
+                        <li class="active menu-home"><a href="http://riotdesign.eu/en/">Home</a></li>
+                        <li class="menu-about"><a href="http://riotdesign.eu/en/about/">About</a></li>
+                        <li class="menu-portfolio"><a href="/en/portfolio/">Portfolio</a></li>
+                        <li class="menu-contacts"><a href="http://riotdesign.eu/en/contacts/">Contacts</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+</header>
+-->
+<div class="wrap" role="document" id="contenuto">
+    <!--
+    <div id="full-width-slider" class="royalSlider" style="display: none;">
+        <div class="rsContent"> <a class="rsImg" href="/assets/img/home-slider/bg-bancacambiano.jpg">Banca di Cambiano</a>
+            <div class="container desc">
+                <div class="row ">
+                    <div class="car-descrizione col-sm-6 col-md-5 ">
+                        <h6 class="animated fadeIn delay03"><span class="Web Design">Web Design</span></h6>
+                        <h2 class="animated fadeInLeft delay03"><a href="/en/portfolio/banca-di-cambiano/">Banca di Cambiano</a></h2>
+                        <p class="animated fadeIn hidden-xs delay03">Responsive website produced for the oldest Cooperative Credit Bank in Italy.</p>
+                        <a class="btn  btn-primary animated fadeInUp hidden-xs delay03" href="/en/portfolio/banca-di-cambiano/">Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rsContent"> <a class="rsImg" href="/assets/img/home-slider/bg-goodssolutions.jpg">Goods Solutions</a>
+            <div class="container desc">
+                <div class="row ">
+                    <div class="car-descrizione col-sm-6 col-md-5 ">
+                        <h6 class="animated fadeIn delay03"><span class="Grafica">Graphic Design</span> <span class="sep">/</span> <span class="Web Design">Web Design</span> <span class="sep">/</span> </h6>
+                        <h2 class="animated fadeInLeft delay03"><a href="/en/portfolio/goods-solutions/">Goods Solutions</a></h2>
+                        <p class="animated fadeIn hidden-xs delay03"> A new brand identity which includes logo, fonts and colors. Completed by a responsive website with dynamic content. </p>
+                        <a class="btn btn-primary animated fadeInUp hidden-xs delay03" href="/en/portfolio/goods-solutions/">Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rsContent"> <a class="rsImg" href="/assets/img/home-slider/bg-ledueviedeldestino.jpg">Le due vie del destino</a>
+            <div class="container desc">
+                <div class="row ">
+                    <div class="car-descrizione col-sm-6 col-md-5 ">
+                        <h6 class="animated fadeIn Web Design delay03">Web Design</h6>
+                        <h2 class="animated fadeInLeft delay03"><a href="/en/portfolio/le-due-vie-del-destino/">Le due vie del destino</a></h2>
+                        <p class="animated fadeIn hidden-xs delay03">Design of responsive website made for the film promotion.</p>
+                        <a class="btn  btn-primary animated fadeInUp hidden-xs delay03" href="/en/portfolio/le-due-vie-del-destino/">Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rsContent"> <a class="rsImg" href="/assets/img/home-slider/bg-asf.jpg">Antico Setificio Fiorentino</a>
+            <div class="container desc">
+                <div class="row ">
+                    <div class="car-descrizione col-sm-6 col-md-5">
+                        <h6 class="animated fadeIn delay03"><span class="Web Design">Web Design</span> <span class="sep">/</span> <span class="Newsletter">Newsletter</span> <span class="sep">/</span> </h6>
+                        <h2 class="animated fadeInLeft delay03"><a href="/en/portfolio/antico-setificio-fiorentino/">Antico Setificio Fiorentino</a></h2>
+                        <p class="animated fadeIn hidden-xs delay03">Winner of Site of the Day on AWWWWARDS, this website presents a part of florentine tradition: the art of silk.</p>
+                        <a class="btn  btn-primary animated fadeInUp hidden-xs delay03" href="/en/portfolio/antico-setificio-fiorentino/">Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rsContent"> <a class="rsImg" href="/assets/img/home-slider/bg-viamasini80.jpg">Via Masini 80</a>
+            <div class="container desc">
+                <div class="row ">
+                    <div class="car-descrizione col-sm-6 col-md-5 ">
+                        <h6 class="animated fadeIn delay03"><span class="Web Design">Web Design</span> <span class="sep">/</span> </h6>
+                        <h2 class="animated fadeInLeft delay03"><a href="/en/portfolio/via-masini-80/">Via Masini 80</a></h2>
+                        <p class="animated fadeIn hidden-xs delay03"> Responsive website made for the new fashion brand Via Masini 80, a minimal, modern design with good care of typography. </p>
+                        <a class="btn btn-primary animated fadeInUp hidden-xs delay03" href="/en/portfolio/via-masini-80/">Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+   <!--  <div style="width: 100%; height: 10000px;"></div> -->
+    
+    <section class="grigio">
+        <div class="container">
+            <div class="presentazione">
+                <h2>Only good design, produced in Empoli (Florence)</h2>
+                <p>We are specialists in the creation of brand identities and advertising campaigns for print and web.</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="http://riotdesign.eu/assets/img/links-about.jpg" alt="About" width="150" height="150">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading"><a href="/about/">About</a></h4>
+                            <p class="hidden-sm">What is Riot Design, our clients and specialties.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="http://riotdesign.eu/assets/img/links-portfolio.jpg"  alt="Web Design and Graphic Design Portfolio" width="150" height="150">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading"> <a href="/en/portfolio/">Portfolio</a></h4>
+                            <p class="hidden-sm">Web design, app design, print works and photography.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img src="http://riotdesign.eu/assets/img/links-contatti.jpg" alt="Contacts for our agency in Empoli, Florence (Italy)" width="150" height="150" />
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading"><a href="/en/contacts/">Contacts</a></h4>
+                            <p class="hidden-sm">Where to find the <strong>Office<sup>Rd</sup></strong>, contact module and more.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div><!-- /.wrap -->
+  
+
+<footer class="content-info" role="contentinfo" style="display: none;">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <h5>Riot Design <small>Web & Graphic Design Agency</small></h5>
+                <p>Via Jacopo Carrucci, 152 - 50053 Empoli (FI)
+                    <br/> +39 0571 711155 - info@riotdesign.eu
+                    <br/>
+                </p>
+            </div>
+            <div class="col-sm-5">
+                <h5>From the Blog<sup>Rd</sup></h5>
+                <a href="/en/2014/04/10/wearable-technologies-revolutionary-tools-and-ludicrous-gadgets/">Wearable technologies: revolutionary tools and ludicrous gadgets</a>
+                <p>The recent technological history has accustomed us to witness epochal changes that arise quietly and soon invade our lives, changing &hellip; <a href="http://riotdesign.eu/en/2014/04/10/wearable-technologies-revolutionary-tools-and-ludicrous-gadgets/">Continued</a></p>
+
+            </div>
+            <div class="col-sm-2 hidden-xs">
+                <img class="slogan pull-right" src="/assets/img/che-il-buon-design-regni-sul-web.png" alt="May good design rule the Web" width="170" height="180" />
+            </div>
+        </div>
+
+        <hr/>
+        <div class="sotto-footer">
+            <div class="icone-social">
+                <a href="http://www.facebook.com/riotdesign.eu" target="_blank" class="icona-facebook"> </a>
+                <a href="http://twitter.com/riot_design_eu" target="_blank" class="icona-twitter"> </a>
+                <a href="http://plus.google.com/100562758917063789241/" target="_blank" class="icona-google-plus"> </a>
+                <a href="http://www.flickr.com/groups/1705479@N23/" target="_blank" class="icona-flickr"> </a>
+                <a href="http://instagram.com/riot_design" target="_blank" class="icona-instagram"> </a>
+            </div>
+
+            <p class="copyright"> <a href="//www.iubenda.com/privacy-policy/985160" class="iubenda-nostyle no-brand iub-legal-only iubenda-embed" title="Privacy Policy">Privacy Policy</a> - &copy; 2015 Riot Design</p>
+            <div class="language_list">
+                <ul>
+                    <li><span>English</span></li>
+                    <li><a class="noajax" href="http://riotdesign.eu/home/"><span>Italiano</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
 </body>
+
 </html>

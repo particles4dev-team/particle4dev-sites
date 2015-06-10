@@ -12,12 +12,10 @@
   "dependencies": {
     "browser-sync": "^2.7.5",
     "browserify": "^10.2.1",
-    "fastclick": "^1.0.6",
     "gulp": "^3.8.11",
     "gulp-notify": "^2.2.0",
     "gulp-util": "^3.0.4",
     "lodash": "^3.9.3",
-    "phaser": "^2.3.0",
     "pretty-hrtime": "^1.0.0",
     "require-dir": "^0.3.0",
     "serve-static": "^1.9.3",
@@ -26,8 +24,6 @@
   },
   "devDependencies": {
     "babelify": "^6.1.2",
-    "material-ui": "^0.8.0",
-    "react": "^0.13.3",
-    "react-tap-event-plugin": "^0.1.7"
+    "react": "^0.13.3"
   }
 }
