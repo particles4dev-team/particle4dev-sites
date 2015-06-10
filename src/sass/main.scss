@@ -1,0 +1,54 @@
+body {
+    background: #424b51;
+}
+section {
+    padding: 30px 0;
+    background: white;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+.home .grigio {
+    padding-bottom: 30px;
+    padding-top: 100px;
+}
+section.grigio {
+    background: #ebeeed;
+}
+
+.home .presentazione {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.home .presentazione h2 {
+    margin-top: 0;
+}
+
+.media {
+    background: #fff;
+    border-bottom: solid 1px #c7c9c8;
+    margin-bottom: 30px;
+}
+
+.media a {
+    overflow: hidden;
+}
+
+.btn {
+    background: transparent;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+}
+
+.media-body {
+    padding: 16px 30px 10px 26px;
+    margin-right: 0;
+}
+
+@import 'navbar';
+@import 'header';

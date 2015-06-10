@@ -6,7 +6,7 @@ module.exports = {
         server: {
             // We're serving the src folder as well
             // for sass sourcemap linking
-            baseDir: [dest, src]
+            baseDir: [dest]
         },
         files: [
             dest + '/**'
@@ -19,7 +19,8 @@ module.exports = {
         src: [
             "node_modules/phaser/build/phaser.js",
             src + "/www/**",
-            src + "/app/**"
+            src + "/app/**",
+            src + "/stylesheet/main.css"
         ],
         dest: dest,
         // https://medium.com/@mattdesl/gulp-and-browserify-shim-f1c587cb56b9 
@@ -34,5 +35,12 @@ module.exports = {
             dest: dest,
             outputName: 'app.js'
         }]
+    },
+    sass: {
+        dest: src + '/stylesheet/',
+        output: src + '/stylesheet/',
+        src: [
+            src + "/sass/*.scss",
+        ]
     }
 };
