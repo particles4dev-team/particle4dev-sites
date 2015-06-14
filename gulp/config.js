@@ -13,7 +13,7 @@ module.exports = {
         ],
         // https://github.com/expressjs/serve-static
         // https://github.com/BrowserSync/browser-sync/issues/514
-        middleware: require("serve-static")(".src/assets")
+        middleware: require("serve-static")("./src/assets")
     },
     markup: {
         src: [
