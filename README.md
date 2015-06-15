@@ -121,6 +121,10 @@ server {
     if ($http_user_agent ~ "MSIE" ) {
         return 303 https://browser-update.org/update.html;
     }
+    location ~* \.(js|jpg|png|css)$ {
+        root /var/www/particle4dev.com/team;
+        expires 30d;
+    }
     location / {
         root /var/www/particle4dev.com/team;
         index index.html index.htm;
