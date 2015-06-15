@@ -42,12 +42,23 @@ TEAM
         height: 32px;
         line-height: 32px;
         text-align: center;
-        background-color: #515A5F;
+        background-color: #272B31;
         display: block;
         color: #fff;
         &:hover {
-            background-color: #3288C4;
-            color: #fff;
+            color: #fff;            
+            .ion-social-facebook {
+                background-color: #3b5998;
+                border-radius: 50%;
+            }
+            .ion-social-twitter {
+                background-color: #39a9e0;
+                border-radius: 50%;
+            }
+            .ion-social-github {
+                background-color: #829AA8;
+                border-radius: 50%;
+            }
         }
         i {
             display: block;
