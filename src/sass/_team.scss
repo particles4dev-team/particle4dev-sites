@@ -32,23 +32,25 @@ TEAM
     }
     .social li {
         padding: 0px;
-        a {
-            font-size: 20px;
-            color: #515A5F;
-            width: 32px;
-            height: 32px;
-            line-height: 32px;
-            text-align: center;
-            background-color: #515A5F;
-            display: block;
+    }
+}
+.social {
+    a {
+        font-size: 20px;
+        color: #515A5F;
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        background-color: #515A5F;
+        display: block;
+        color: #fff;
+        &:hover {
+            background-color: #3288C4;
             color: #fff;
-            &:hover {
-                background-color: #3288C4;
-                color: #fff;
-            }
-            i {
-                display: block;
-            }
+        }
+        i {
+            display: block;
         }
     }
 }
