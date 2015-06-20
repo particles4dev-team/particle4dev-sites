@@ -17,13 +17,18 @@ module.exports = {
     },
     markup: {
         src: [
-            "node_modules/phaser/build/phaser.js",
-            src + "/www/**",
             src + "/app/**",
             src + "/stylesheet/main.css"
         ],
         dest: dest,
         // https://medium.com/@mattdesl/gulp-and-browserify-shim-f1c587cb56b9 
+    },
+    watch: {
+        src: [
+            src + "/www/**",
+            src + "/app/**",
+            src + "/stylesheet/main.css"
+        ]
     },
     browserify: {
         // Enable source maps
@@ -42,5 +47,12 @@ module.exports = {
         src: [
             src + "/sass/*.scss",
         ]
+    },
+    handlebars: {
+        dest: dest,
+        src: [
+            src + "/www/*.handlebars",
+        ],
+        partials: [src + "/www/partials"]
     }
 };

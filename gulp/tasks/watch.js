@@ -4,8 +4,8 @@
 */
 
 var gulp   = require('gulp');
-var config = require('../config');
+var config = require('../config').watch;
 
 gulp.task('watch', ['setWatch', 'browserSync', 'sass:watch'], function() {
-  	gulp.watch(config.markup.src, ['markup']);
+  	gulp.watch(config.src, ['handlebars', 'markup']);
 });
