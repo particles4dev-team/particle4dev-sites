@@ -23,6 +23,7 @@ cd /etc/nginx/sites-available
 vim iojs-vi
 
 ===CONTENT
+
 server_tokens off; # for security-by-obscurity: stop displaying nginx version
 
 # this section is needed to proxy web-socket connections
