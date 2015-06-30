@@ -54,5 +54,7 @@ module.exports = {
             src + "/www/*.handlebars",
         ],
         partials: [src + "/www/partials"]
-    }
+    },
+    cssSrc: dest + '/main.css',
+    url: 'http://www.iojs-vi.com:3000'
 };
