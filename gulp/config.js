@@ -55,5 +55,7 @@ module.exports = {
         partials: [src + "/www/partials"]
     },
     cssSrc: dest + '/main.css', // minifyCss task
+    htmlSrc: dest + '/*.html',
+    htmlDest: dest,
     url: 'http://www.iojs-vi.com:3000'
 };

@@ -4,9 +4,7 @@ var rename      = require('gulp-rename');
 var config      = require('../config').handlebars;
 
 gulp.task('handlebars', function () {
-    var templateData = {
-        firstName: 'Kaanon'
-    },
+    var templateData = {},
     options = {
         ignorePartials: true, //ignores the unknown footer2 partial in the handlebars template, defaults to false
         // partials : {
