@@ -13,12 +13,12 @@ module.exports = {
         ],
         // https://github.com/expressjs/serve-static
         // https://github.com/BrowserSync/browser-sync/issues/514
-        middleware: require("serve-static")("./src/assets")
+        // middleware: require("serve-static")("./src/assets")
     },
     markup: {
         src: [
-            src + "/app/**",
-            src + "/stylesheet/main.css"
+            src + "/app/**/*",
+            src + "/assets/**/*",
         ],
         dest: dest,
         // https://medium.com/@mattdesl/gulp-and-browserify-shim-f1c587cb56b9 
@@ -26,8 +26,7 @@ module.exports = {
     watch: {
         src: [
             src + "/www/**",
-            src + "/app/**",
-            src + "/stylesheet/main.css"
+            src + "/app/**"
         ]
     },
     browserify: {
@@ -42,11 +41,11 @@ module.exports = {
         }]
     },
     sass: {
-        dest: src + '/stylesheet/',
-        output: src + '/stylesheet/',
+        dest: dest,
         src: [
             src + "/sass/*.scss",
-        ]
+        ],
+        settings: {outputStyle: 'compressed'}
     },
     handlebars: {
         dest: dest,
@@ -55,6 +54,6 @@ module.exports = {
         ],
         partials: [src + "/www/partials"]
     },
-    cssSrc: dest + '/main.css',
+    cssSrc: dest + '/main.css', // minifyCss task
     url: 'http://www.iojs-vi.com:3000'
 };

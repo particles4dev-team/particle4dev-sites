@@ -7,5 +7,5 @@ var gulp   = require('gulp');
 var config = require('../config').watch;
 
 gulp.task('watch', ['setWatch', 'browserSync', 'sass:watch'], function() {
-    gulp.watch(config.src, ['handlebars', 'markup']);
+    gulp.watch(config.src, ['handlebars', 'copyStatic']);
 });
